@@ -57,19 +57,24 @@ p{
 
 /* title image */
 .title-image{
-  width: 60%;
+  width: 40%;
   transform: rotate(25deg);
+
+  position: absolute;
 }
 
 /* features section */
 
 #features{
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-box{
   text-align: center;
-  padding: 5%;
+  padding: 4.5%;
 }
 
 .icon{
@@ -120,4 +125,40 @@ p{
 
 .pricing-column{
   padding: 3% 2%;
+}
+
+/* CTA SECTION */
+#cta{
+  background-color: #ff4c68;
+  color: #FFF;
+  padding: 7% 15%;
+  text-align: center;
+
+}
+.cta-heading{
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* FootSection */
+#footer{
+  padding: 7% 15%;
+  text-align: center;
+
+}
+.footer-icons{
+  margin: 20px 10px;
+
+}
+
+@media (max-width: 1028px) {
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+
+  #title{
+    text-align: center;
+  }
 }
